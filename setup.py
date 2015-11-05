@@ -1,13 +1,13 @@
 from distutils.core import setup
 
 setup(
-    name='chimera_template',
+    name='chimera_domeflat',
     version='0.0.1',
-    packages=['chimera_template', 'chimera_template.instruments', 'chimera_template.controllers'],
+    packages=['chimera_domeflat', 'chimera_domeflat.instruments', 'chimera_domeflat.controllers'],
     scripts=[],
-    url='http://github.com/astroufsc/chimera-template',
+    url='http://github.com/astroufsc/chimera-domeflat',
     license='GPL v2',
-    author='William Schoenell',
-    author_email='william@iaa.es',
-    description='Template for chimera plugins'
+    author='Tiago Ribeiro',
+    author_email='tribeiro@ufs.br',
+    description='Chimera plugin for automated domeflats'
 )

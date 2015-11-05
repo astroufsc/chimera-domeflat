@@ -1,7 +1,7 @@
-chimera-template plugin
+chimera-domeflat plugin
 =======================
 
-This is a template plugin for the chimera observatory control system
+This is a plugin for the chimera observatory control system
 https://github.com/astroufsc/chimera.
 
 Usage
