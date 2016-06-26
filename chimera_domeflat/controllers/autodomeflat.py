@@ -176,10 +176,15 @@ class AutoDomeFlat(ChimeraObject, IAutoFlat):
             # checking for aborting signal
             if self._abort.isSet():
                 self.log.warning('Aborting!')
-                self._getTel().stopTracking()
-                return
+                break
 
+        self.log.debug("Done taking flats. Switching lamp off.")
         self._switchLampOff(lamp)
+
+    def abort(self):
+        self._abort.set()
+        cam = copy.copy(self._getCam())
+        cam.abortExposure()
 
     def getFlatLevel(self, filename, image):
         """
